@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+  <div class="content">
+   <h2>java script</h2>
+  	<form >
+  		<label for="enumber1">Enter Number1:</label>
+  		<input type="text" id="num1" value="" ><br><br>
+
+        <label for="enumber2">Enter Number2:</label>
+  		<input type="text" id="num2"  value="" ><br><br>
+
+  		<label for="enumber3">Enter Number3:</label>
+  		<input type="text" id="num3" value="" ><br><br>
+    </form>
+  	  <div class="butt">
+  	  <button onclick="myFunction1()">Max number</button>
+  	  <button onclick="myFunction2()">Min Number</button>
+  	  <p id="demo"></p>
+  	  <p id="demo1"></p>
+  </div>
+</div>  
+
+<script >
+	
+function myFunction1(){
+	var number1,number2,number3; 
+	number1 = document.getElementById("num1").value;
+    number2 = document.getElementById("num2").value;
+    number3 = document.getElementById("num3").value;
+    
+	if (number1>=number2 && number1>=number3) {
+     document.getElementById("demo").innerHTML = "Maximum number:"+ number1;
+	}
+	else if(number2>=number1 && number2>=number3) {
+     document.getElementById("demo").innerHTML = "Maximum number:"+ number2;
+	}
+	else{
+		(number3>=number1 && number3>=number2) 
+     document.getElementById("demo").innerHTML = "Maximum number:"+ number3;
+	}	  
+}
+
+	
+function myFunction2(){
+	var number1,number2,number3; 
+	number1 = document.getElementById("num1").value;
+    number2 = document.getElementById("num2").value;
+    number3 = document.getElementById("num3").value;
+    
+	if (number1<=number2 && number1<=number3) {
+     document.getElementById("demo1").innerHTML = "Minimum number:"+ number1;
+	}
+	else if(number2<=number1 && number2<=number3) {
+     document.getElementById("demo1").innerHTML = "Minimum number:"+ number2;
+	}
+	else{
+		(number3<=number1 && number3<=number2) 
+     document.getElementById("demo1").innerHTML = "Minimum number:"+ number3;
+	}	  
+}
+</script>
+
+
+
+
+</body>
+</html>

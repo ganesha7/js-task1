@@ -1,0 +1,29 @@
+.content{
+	width: 350px;
+	background-color: lightblue;
+	margin: auto;
+	border:2px solid gray;
+	margin-top: 40px;
+}
+.content h2{
+	font-family:cursive;
+	text-align: center;
+}
+.content form{
+	text-align: center;
+}
+.content form label{
+	font-size: 17px;
+}
+.butt {
+ text-align: center;
+ padding-bottom: 10px;
+}
+.butt button{
+	background-color: gray;
+	color: white;
+	
+}
+.butt p{
+	font-size: 20px;
+}
